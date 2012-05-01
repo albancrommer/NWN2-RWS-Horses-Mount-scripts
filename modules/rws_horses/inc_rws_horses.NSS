@@ -256,7 +256,7 @@ int SetUnmountedInventory(object oCreature )
 	object oMountItem = GetItemInSlot( INVENTORY_SLOT_CLOAK, oCreature );
 	AllowUnmount( oCreature );
 	AssignCommand( oCreature, ActionUnequipItem( oMountItem ) );
-	DisallowUnmount( oCreature );
+	DelayCommand( DELAY_MOUNT_DISALLOW, DisallowUnmount( oCreature ) );
 	DestroyObject( oMountItem );
 	object oOriginalCloakItem = GetLocalObject( GetModule(), GetCreatureInventoryVar( oCreature ));
 	if( GetIsObjectValid( oOriginalCloakItem ) )

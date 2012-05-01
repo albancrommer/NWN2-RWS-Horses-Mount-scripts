@@ -12,6 +12,8 @@ const string MSG_RWS_MOUNT_INVALID_MOUNT = "This is not mountable.";
 const string MSG_RWS_MOUNT_INVALID_MOUNT_DISTANCE = "You are too far from the mount.";
 const string MSG_RWS_MOUNT_INVALID_UNMOUNT = "Target yourself if you want to dismount.";
 const string MSG_RWS_MOUNT_INVALID_UNMOUNT_DISTANCE = "Target a valid nearer location.";
+const string MSG_RWS_MOUNT_INVALID_UNEQUIP = "Use mounting item's Unique Power.";
+const string MSG_RWS_MOUNT_INVALID_EQUIP = "This item should not be in inventory, please report.";
 
 // 2DA entries
 const int MOUNT_6_HUMAN = 4000;

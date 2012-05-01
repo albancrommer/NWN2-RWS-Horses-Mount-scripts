@@ -16,7 +16,7 @@ void main()
     object oTarget  	= GetItemActivatedTarget();
     location lTarget 	= GetItemActivatedTargetLocation();
 
-
+	// Unmounting
 	if( GetIsMounted( oPC ) )
 	{
 		if( oPC == oTarget )
@@ -38,6 +38,7 @@ void main()
 		// Must target self or place 	
 		SendMessageToPC( oPC, MSG_RWS_MOUNT_INVALID_UNMOUNT );
 
+	// Mounting
 	}else{
 	
 		// Must target a valid animal

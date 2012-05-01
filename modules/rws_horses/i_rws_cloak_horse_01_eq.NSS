@@ -19,7 +19,10 @@ void main()
 		return;
 	}
 	
-	SendMessageToPC( oPC, "You cannot equip that. This item should not be in inventory, please report." );
+	SendMessageToPC( oPC, MSG_RWS_MOUNT_INVALID_EQUIP );
+	
+	// You could alert DMs or PW admins here
+	
 	object oItemInSlot 	= GetItemInSlot( INVENTORY_SLOT_CLOAK, oPC );
 	if( OBJECT_INVALID != oItemInSlot )
 	{

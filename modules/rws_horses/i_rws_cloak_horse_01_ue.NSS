@@ -18,7 +18,7 @@ void main()
 		return;
 	}
 	
-	SendMessageToPC( oCreature, "You cannot unmount like that, please use the Unique Power of the mounting item by targeting it on yourself" );
+	SendMessageToPC( oCreature, MSG_RWS_MOUNT_INVALID_UNEQUIP"You cannot unmount like that, please use the Unique Power of the mounting item by targeting it on yourself" );
 	object oItemInSlot 	= GetItemInSlot( INVENTORY_SLOT_CLOAK, oCreature );
 	if( OBJECT_INVALID != oItemInSlot )
 	{
