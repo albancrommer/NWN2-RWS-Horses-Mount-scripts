@@ -14,8 +14,11 @@ Testing
 Drop the appearance.2DA file in your override folder.
 Drop the rws_horses.hak in your hak folder.
 Drop the project folder in your nwn2 module folder.
-Start it. 
-
+Drop the playtester bic file in your localvault
+Start module. 
+Pick Playtester character.
+Use the "horsey" icon in the main bar on the noble stallion. 
+Done.
 
 Installation
 
@@ -26,19 +29,19 @@ b. Adding items :
   . move the rws_saddle.UTI / export the item 
   . move the rws_cloak_horse_xx.UTI / export the items 
 c. Adding scripts : 
-  - add/merge inc_const 
-  - add inc_rws_horses
+  - add/merge all NSS files
   
   
 How to use 
 
-Use a saddle unique power on a horse.
+Use a saddle unique power on a horse, there's one in the localvault's PC inventory.
 The script handles hiding the original horse and changing the PC appearance.
 The horse appearance is checked and the PC is equiped with the adequate cloak.
 Use the saddle unique power on yourself to unmount.
 The cloak is removed from the PC and if a cloak previously weared is found, it 
 is weared again.
-The script takes care
+The script takes care of all the internals : avoiding cloaks equiping with wrong 
+appearance and so on.
 
 
 Technical
@@ -46,11 +49,11 @@ Technical
 We use GetAppearanceType() to match the appropriate appearance.2DA lines, see
 the GetMountedAppearanceLine() function in inc_rws_horses.nss
 
-Each horse appearance requires a distinct cloak
+Each horse appearance requires a distinct cloak and un-equip scripts.
 
 Known problems
 
-Loading a game with "equiped" mount is a problem that needs fixing.
+[]
 
 
 --- 
