@@ -16,6 +16,8 @@ const string MSG_RWS_MOUNT_INVALID_UNEQUIP = "Use mounting item's Unique Power."
 const string MSG_RWS_MOUNT_INVALID_EQUIP = "This item should not be in inventory, please report.";
 
 // 2DA entries
+const int MOUNT_MIN = 4000;
+const int MOUNT_MAX = 4069;
 const int MOUNT_6_HUMAN = 4000;
 const int MOUNT_3_HALFLING = 4001;
 const int MOUNT_4_HALF_ELF = 4002;
